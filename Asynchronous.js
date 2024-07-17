@@ -1,56 +1,63 @@
-function fetchData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Hello");
-    }, 2000);
-  });
-}
+// Asynchronous Function
 
-async function fetchDataAndProcess() {
-  try {
-    console.log("Dear");
-
-    // Await the fetchData function
-    const data = await fetchData();
-
-    console.log(data); // Output: 'Data fetched using Async/Await'
-    console.log("Areeba");
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-}
-
-fetchDataAndProcess();
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Promisw
 
 // function fetchData() {
 //   return new Promise((resolve, reject) => {
+    
 //     setTimeout(() => {
-//       resolve("Data fetched");
+//       const success = true;
+
+//       if (success) {
+//         resolve("Data fetched successfully");
+//       } else {
+//         reject("Error fetching data");
+//       }
+//     }, 2000);
+//   });
+// }
+
+
+// fetchData()
+//   .then((data) => {
+//     console.log(data); 
+//   })
+//   .catch((error) => {
+//     console.error(error); 
+//   });
+
+
+
+// Async / await 
+// function fetchData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Hello");
 //     }, 2000);
 //   });
 // }
 
 // async function fetchDataAndProcess() {
-//   console.log("Fetching data...");
+//   try {
+//     console.log("Dear");
 
-//   // Await the fetchData function
-//   const data = await fetchData();
+   
+//     const data = await fetchData();
 
-//   console.log(data); // Output: 'Data fetched'
-//   console.log("Data processing complete.");
+//     console.log(data); 
+//     console.log("Areeba");
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//   }
 // }
 
 // fetchDataAndProcess();
+
+
+
+
+
+
+
+
+
