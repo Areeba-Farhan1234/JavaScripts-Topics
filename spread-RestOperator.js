@@ -1,37 +1,37 @@
 // Spread and Rest Operator Function
 
-// //Spread Operator 
+//Spread Operator 
 
-// const numbers = [1, 2, 3];
+const number = [1, 2, 3];
 
-// const moreNumbers = [...numbers, 4, 5, 6];
+const moreNumbers = [...number, 4, 5, 6];
 
-// console.log(moreNumbers); // Output: [1, 2, 3, 4, 5, 6]
+console.log(moreNumbers); // Output: [1, 2, 3, 4, 5, 6]
 
-// //Rest Operator 
+//Rest Operator 
 
-// function sum(...args) {
-//   return args.reduce((total, num) => total + num, 0);
-// }
+function sum(...args) {
+  return args.reduce((total, num) => total + num, 0);
+}
 
-// console.log(sum(1, 2, 3));    // Output: 6
-// console.log(sum(4, 5, 6, 7)); // Output: 22
-
-
-// //Spread and Rest Operators
+console.log(sum(1, 2, 3));    // Output: 6
+console.log(sum(4, 5, 6, 7)); // Output: 22
 
 
-// const arr1 = [1, 2, 3];
-// const arr2 = [4, 5, 6];
+//Spread and Rest Operators
 
 
-// const mergedArray = [...arr1, ...arr2];
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
 
-// console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6]
 
-// function concatenateStrings(...strings) {
-//   return strings.join(' ');
-// }
+const mergedArray = [...arr1, ...arr2];
 
-// console.log(concatenateStrings('Hello', 'world!'));      // Output: "Hello world!"
-// console.log(concatenateStrings('JavaScript', 'is', 'Interested Language!')); // Output: "JavaScript is fun!"
+console.log(mergedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+function concatenateStrings(...strings) {
+  return strings.join(' ');
+}
+
+console.log(concatenateStrings('Hello', 'world!'));      // Output: "Hello world!"
+console.log(concatenateStrings('JavaScript', 'is', 'Interested Language!')); // Output: "JavaScript is Interested Language!"
